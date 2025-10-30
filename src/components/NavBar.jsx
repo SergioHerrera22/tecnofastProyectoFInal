@@ -7,17 +7,16 @@ import { NavLink, Link } from "react-router";
 function NavBar({ categories }) {
   return (
     <Navbar expand="lg" className="bg-white py-3 shadow-sm">
-      {" "}
-      {/* Añadimos sombra al navbar */}
+ 
+     
       <Container>
-        {/* Marca: Texto en negro fuerte (text-dark) */}
+     
         <Navbar.Brand as={Link} to="/" className="fw-bold text-dark fs-3">
-          {" "}
-          {/* Marca más grande */}
+          
           TecnoFast 🚀
         </Navbar.Brand>
 
-        {/* Toggle para móviles: Botón con un color de borde que contraste (black) */}
+       
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           className="border-dark"
@@ -25,7 +24,7 @@ function NavBar({ categories }) {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            {/* Dropdown: Título en negro (text-dark) */}
+            
             <NavDropdown
               title={<span className="text-dark fw-bold">Categorias</span>}
               id="basic-nav-dropdown"
@@ -35,7 +34,7 @@ function NavBar({ categories }) {
                   as={NavLink}
                   to={`/category/${category.categoryName}`}
                   key={category.id}
-                  // Enlaces del dropdown: Texto negro, fondo blanco por defecto.
+                  
                   className="text-dark"
                 >
                   {category.categoryName}
@@ -45,7 +44,7 @@ function NavBar({ categories }) {
           </Nav>
         </Navbar.Collapse>
 
-        {/* El componente CartWidget debe recibir la cantidad de ítems. */}
+  
         <CartWidget quantity={5} />
       </Container>
     </Navbar>
