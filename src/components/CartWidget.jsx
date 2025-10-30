@@ -11,19 +11,19 @@ function CartWidget() {
 
   return (
     <Button
-      variant="dark" // Fondo Negro
+      variant="dark" 
       onClick={() => {
-        /* Lógica de navegación a /cart */
+      
       }}
-      className="ms-3 shadow-lg border border-2 border-dark" // Sombra y borde negro para impacto
-      size="lg" // Botón más grande
+      className="ms-3 shadow-lg border border-2 border-dark" 
+      size="lg" 
     >
-      {/* Ícono de Bolsa de Compra (en Amarillo para destacar sobre el Negro) */}
+     
       <span role="img" aria-label="shopping bag" className="fs-4 text-warning">
         🛍️
       </span>
 
-      {/* Contador (Badge): Fondo Negro y Número Amarillo para contraste inverso */}
+    
       <Badge
         bg="dark"
         className="text-warning rounded-pill ms-1 align-middle p-2"
