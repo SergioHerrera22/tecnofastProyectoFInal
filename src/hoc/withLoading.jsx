@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-unused-vars
+
 export const withLoading = (Component) => {
   function ComponentWithLoading (props) {
     if (props.items.length < 1) {
