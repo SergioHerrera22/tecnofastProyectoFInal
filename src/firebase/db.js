@@ -55,7 +55,7 @@ export const getItem = async (id) => {
   if (docSnap.exists()) {
     return {...docSnap.data(), id: docSnap.id}
   } else {
-    // docSnap.data() will be undefined in this case
+  
     console.log("No such document!")
   }
 }
